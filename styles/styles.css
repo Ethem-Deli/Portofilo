@@ -1,0 +1,275 @@
+/* Base Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #000;
+}
+
+/* Navigation */
+nav {
+    background: #1a1a1a;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #238aff;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-parent:hover .dropdown {
+    display: block;
+}
+
+.dropdown-parent {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    min-width: 180px;
+    z-index: 10;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown a:hover {
+    background: #420eff;
+    color: white;
+}
+
+/* Containers */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 3em 1em;
+    background: #f9f9f9;
+}
+
+#hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#hero img:hover {
+    transform: scale(1.05);
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-style: italic;
+    color: #666;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Timeline Items */
+.timeline-item {
+    margin-bottom: 2em;
+}
+
+.timeline-content {
+    background: #fff;
+    border-left: 4px solid #4a90e2;
+    padding: 1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skill-tag {
+    background: #50e3c2;
+    color: #1a1a1a;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Achievements */
+#achievements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#achievements li {
+    margin-bottom: 0.75em;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+#achievements li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: green;
+}
+
+/* Contact */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1.2em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.btn-email {
+    background: #d44638;
+}
+
+.btn-email:hover {
+    background: #b73b30;
+}
+
+.btn-github {
+    background: #333;
+}
+
+.btn-github:hover {
+    background: #24292e;
+}
+
+.btn-linkedin {
+    background: #0077b5;
+}
+
+.btn-linkedin:hover {
+    background: #005582;
+}
+
+.btn-phone {
+    background: #25a854;
+}
+
+.btn-phone:hover {
+    background: #1d8541;
+}
+
+/* Scroll to Top */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75em 1em;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+#scrollTopBtn.show {
+    display: block;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2em 1em;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* Fade-in animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
