@@ -55,3 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Footer year update
     document.getElementById('year').textContent = new Date().getFullYear();
 });
+//hamburger menu toggle
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+});
