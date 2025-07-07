@@ -15,7 +15,7 @@ a {
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background: #f9f9f9;
+    background: #000000;
     color: #000;
 }
 
@@ -90,9 +90,10 @@ nav ul li a.active {
 
 /* Containers */
 .container {
-    max-width: 1000px;
-    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
     padding: 2em;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -104,7 +105,7 @@ h2 {
 #hero {
     text-align: center;
     padding: 3em 1em;
-    background: #f9f9f9;
+    background: #000000;
 }
 
 #hero img {
@@ -140,7 +141,7 @@ h2 {
 }
 
 .timeline-content {
-    background: #fff;
+    background: #000000;
     border-left: 4px solid #4a90e2;
     padding: 1em;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -303,4 +304,12 @@ h2 {
     nav ul li {
         margin: 0.5em 0;
     }
+}
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
 }
