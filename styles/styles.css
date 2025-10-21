@@ -304,3 +304,75 @@ h2 {
         margin: 0.5em 0;
     }
 }
+
+.projects-section {
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.projects-section h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 350px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    margin: 10px 0;
+    color: #222;
+}
+
+.project-info p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.project-grade {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c7a7b;
+}
+.earned-credit {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c7a7b;
+}
+.Language {
+    display:inline-flex;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff3636;
+}
