@@ -1,66 +1,58 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Scroll to Top Button
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            scrollTopBtn.classList.add('show');
-        } else {
-            scrollTopBtn.classList.remove('show');
-        }
-    });
-
-    scrollTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Fade-in sections
-    const fadeSections = document.querySelectorAll('.fade-in-section');
-
-    const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                obs.unobserve(entry.target);
-            }
-        });
-    }, {
-        rootMargin: '0px 0px -15% 0px'
-    });
-
-    fadeSections.forEach(section => {
-        observer.observe(section);
-    });
-
-    // Active Nav Link Highlight
-    const navLinks = document.querySelectorAll('nav ul li a');
-    const sections = document.querySelectorAll('main section');
-
-    const navObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.getAttribute('id');
-                document.querySelector('nav a.active')?.classList.remove('active');
-                document.querySelector(`nav a[href="#${id}"]`)?.classList.add('active');
-            }
-        });
-    }, {
-        rootMargin: '-40% 0px -40% 0px'
-    });
-
-    sections.forEach(section => {
-        navObserver.observe(section);
-    });
-
-    // Footer year update
-    document.getElementById('year').textContent = new Date().getFullYear();
-});
-//hamburger menu toggle
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
+  const dropdowns = [
+    { btn: "cvDropdownBtn", menu: "cvDropdown" },
+    { btn: "projDropdownBtn", menu: "projDropdown" },
+  ];
+
+  dropdowns.forEach(({ btn, menu }) => {
+    const button = document.getElementById(btn);
+    const content = document.getElementById(menu);
+    if (!button || !content) return;
+
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isVisible = content.classList.contains("show");
+
+      // close all
+      document.querySelectorAll(".dropdown-content.show").forEach((openMenu) => {
+        openMenu.classList.remove("show");
+      });
+
+      // toggle clicked
+      if (!isVisible) content.classList.add("show");
     });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".dropdown")) {
+      document.querySelectorAll(".dropdown-content.show")
+        .forEach((menu) => menu.classList.remove("show"));
+    }
+  });
+
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav");
+
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      hamburger.classList.toggle("active");
+      nav.classList.toggle("show");
+      // close dropdowns when toggling burger
+      document.querySelectorAll(".dropdown-content.show")
+        .forEach((menu) => menu.classList.remove("show"));
+    });
+  }
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("nav") && !e.target.closest("#hamburger")) {
+      nav?.classList.remove("show");
+      hamburger?.classList.remove("active");
+      document.querySelectorAll(".dropdown-content.show")
+        .forEach((menu) => menu.classList.remove("show"));
+    }
+  });
 });

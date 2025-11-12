@@ -1,180 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethem Deli | Portfolio</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Ethem Deli</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <button id="hamburger" aria-label="Toggle menu">
-            &#9776;
-        </button>
-        <ul id="nav-links">
-            <li><a href="#hero" class="active">Home</a></li>
-            <li class="dropdown-parent">
-                <a href="#profile">Profile</a>
-                <div class="dropdown">
-                    <a href="./index.html">Resume - English</a>
-                    <a href="./Deli_Resume_TR.html">Resume - Turkish</a>
-                    <a href="./Deli_Resume_AR.html">Resume - Arabic</a>
-                </div>
-            </li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-        </ul>
-    </nav>
+    <div class="wrap">
+        <!-- ===== HEADER ===== -->
+        <header>
+            <div class="logo">My Portfolio</div>
 
-    <main>
-        <section id="hero" class="fade-in-section">
-            <div class="container" style="text-align: center;">
-                <img src="./images/image.png" alt="Ethem Deli" style="border-radius: 50%; margin-bottom: 1em;" />
-                <h1>Ethem Deli</h1>
-                <p style="font-size: 1.2em;">“A well-organized system is the foundation of a successful operation.”</p>
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </section>
 
-        <section id="profile" class="fade-in-section">
-            <div class="container">
-                <h2>Profile Summary</h2>
-                <p>
-                    Detail-oriented and highly organized Data Management & Operations Specialist with 11+ years of
-                    experience in data entry, document control, inventory operations, and customer service. Skilled in
-                    Microsoft Office Suite, SAP, EDMS, and web technologies (HTML, CSS, JavaScript). Adept at ensuring
-                    data accuracy, streamlining workflows, and leveraging technology to enhance operational efficiency.
-                    Fluent in Turkish, Arabic, and English.
-                </p>
-            </div>
-        </section>
-
-        <section id="experience" class="fade-in-section">
-            <div class="container">
-                <h2>Professional Experience</h2>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Inventory Controller / Store Manager</h3>
-                        <p>Khonaysser Power Factory - Volvo Penta Dealer</p>
-                        <span class="date">Jan 2022 – Mar 2025</span>
-                        <p>Monitored inventory levels, developed inventory control systems, negotiated with suppliers,
-                            and managed logistics. Tracked orders, analyzed data, trained staff, and implemented
-                            cost-saving measures.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Purchasing Officer / Storekeeper</h3>
-                        <p>United Food Services</p>
-                        <span class="date">Sep 2020 – Dec 2021</span>
-                        <p>Handled procurement, compliance, invoice booking, team coordination, and ensured product
-                            quality and safety in logistics and inventory.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Senior Officer – Document Controller / Data Encoder</h3>
-                        <p>Blue Chip Trading Co.</p>
-                        <span class="date">Sep 2016 – Aug 2020</span>
-                        <p>Maintained documentation systems, entered and validated data, created backups, and generated
-                            reports.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Data Encoder</h3>
-                        <p>RUMCO (Trading & Contracting)</p>
-                        <span class="date">Jul 2013 – Jul 2016</span>
-                        <p>Handled large-scale data input, verification, backups, and responded to queries with a focus
-                            on data security.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="fade-in-section">
-            <div class="container">
-                <h2>Education</h2>
+            <nav id="nav">
                 <ul>
-                    <li>Bachelor’s in Web & Computer Programming (Ongoing) – BYU-Idaho Online</li>
-                    <li>Certificate in Web and Computer Programming – BYU-Idaho</li>
-                    <li>Certificate in Applied Technology – BYU Pathway Connect</li>
-                    <li>Certificates in Document Control & MS Office Fundamentals – Filipino Institute</li>
-                </ul>
-            </div>
-        </section>
+                    <li><a href="index.html">Home</a></li>
 
-        <section id="skills" class="fade-in-section">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">SAP</span>
-                    <span class="skill-tag">EDMS</span>
-                    <span class="skill-tag">MS Office Suite</span>
-                    <span class="skill-tag">Inventory Control</span>
-                    <span class="skill-tag">Document Management</span>
-                    <span class="skill-tag">Data Entry</span>
-                    <span class="skill-tag">System Troubleshooting</span>
-                    <span class="skill-tag">Customer Service</span>
-                    <span class="skill-tag">Multilingual (TR, AR, EN)</span>
+                    <li class="dropdown">
+                        <button class="dropbtn" id="cvDropdownBtn">CV</button>
+                        <div class="dropdown-content" id="cvDropdown">
+                            <a href="resume.html">Resume</a>
+                            <a href="resume-tr.html">Resume Turkish</a>
+                            <a href="resume-ar.html">Resume Arabic</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <button class="dropbtn" id="projDropdownBtn">Projects</button>
+                        <div class="dropdown-content" id="projDropdown">
+                            <a href="projects.html">All Projects</a>
+                            <a href="school-projects.html">School Projects</a>
+                        </div>
+                    </li>
+
+                    <li><a href="certificates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main>
+            <section class="hero">
+                <div class="hero-left">
+                    <h1>Hi My name is Ethem Deli</h1>
+                    <p>I build delightful web experiences and apps with a focus on design,
+                        performance, and accessibility.</p>
+                    <div class="cta-row">
+                        <a class="btn" href="/pages/projects.html">See my work</a>
+                        <a class="btn secondary" href="/pages/cv.html">CV's</a>
+                    </div>
+                </div>
+
+                <aside class="card-profile">
+                    <div class="avatar">
+                        <img src="images/image.png" alt="Ethem Deli">
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">Ethem Deli</div>
+                        <div class="profile-role">Frontend Developer • Qatar</div>
+                    </div>
+                    <!-- <div class="profile-actions">
+                        <a class="btn" href="mailto:you@example.com">Contact</a>
+                        <a class="btn secondary" href="/pages/projects.html">Projects</a>
+                    </div> -->
+                </aside>
+            </section>
+<section id="about">
+    <div class="about-grid">
+        <div class="about-text">
+            <h3>About Me</h3>
+            <p>
+                I’m a detail-oriented and highly organized <strong>Data Management & Operations Specialist</strong>
+                with over 11 years of experience in data entry, document control, and inventory operations.
+                I have a passion for streamlining workflows, ensuring data accuracy, and leveraging technology
+                to improve operational efficiency. Currently pursuing a <strong>B.S. in Software Development</strong>
+                at Brigham Young University Idaho, I’m expanding my expertise in web technologies and software systems.
+            </p>
+            <p>
+                Fluent in <strong>Turkish, Arabic, and English</strong>, I thrive in multicultural environments and
+                enjoy
+                transforming complex data processes into simple, efficient, and well documented digital systems.
+            </p>
+            <ul>
+                <li>Data management, document control, and inventory operations</li>
+                <li>Web development (HTML, CSS, JavaScript, debugging)</li>
+                <li>Workflow automation & process optimization</li>
+                <li>System troubleshooting and SAP/EDMS proficiency</li>
+            </ul>
+        </div>
+
+        <div class="about-skills">
+            <h4>Technical Skills</h4>
+            <div class="skills">
+                <span class="tag">Microsoft Office Suite</span>
+                <span class="tag">SAP & EDMS</span>
+                <span class="tag">HTML & CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Data Visualization</span>
+                <span class="tag">Workflow Automation</span>
+                <span class="tag">Networking & Troubleshooting</span>
+            </div>
+        </div>
+    </div>
+</section>
+            <section id="career-docs">
+                <div class="section-title">
+                    <h2>Career documents</h2>
+                    <p>Quick access to resumes, projects and certificates</p>
+                </div>
+
+                <div class="grid-projects">
+                    <article class="proj">
+                        <h3>CV’s</h3>
+                        <p>Official resume summary of experience and skills in English, Arabic and Turkish Languages.</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="/pages/cv.html">View</a>
+                        </div>
+                    </article>
+
+                    <article class="proj">
+                        <h3>Projects</h3>
+                        <p>Detailed projects of my own</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="/pages/projects.html">View</a>
+                        </div>
+                    </article>
+
+                    <article class="proj">
+                        <h3>School Projects</h3>
+                        <p>Academic and class projects portfolio and case studies..</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="/pages/school.html">View</a>
+                        </div>
+                    </article>
+
+                    <article class="proj">
+                        <h3>Certificates</h3>
+                        <p>Professional certificates and trainings.</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="certificates.html">View</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            
+
+        <section id="contact">
+            <div class="contact-card">
+                <div>
+                    <h3>Get in touch</h3>
+                    <p>Want to collaborate or hire me? I usually respond within 24 hours.</p>
+                </div>
+        
+                <div class="contact-actions">
+                    <!-- Email -->
+                    <a class="btn" href="mailto:ethemdeli.tr@gmail.com" title="Send me an email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.511l-8 5.334-8-5.334V6Zm-16 12V9.156l7.386 4.924a1 1 0 0 0 1.228 0L20 9.156V18Z" />
+                        </svg>
+                        Email
+                    </a>
+        
+                    <!-- WhatsApp -->
+                    <a class="btn secondary whatsapp" href="https://wa.me/97450606655" target="_blank" rel="noopener"
+                        title="Chat on WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.04 2c-5.52 0-10 4.46-10 9.97 0 1.76.47 3.47 1.35 4.99L2 22l5.2-1.35a10 10 0 0 0 4.84 1.23h.01c5.52 0 10-4.46 10-9.97S17.56 2 12.04 2Zm0 18.24c-1.53 0-3.02-.4-4.34-1.15l-.31-.18-3.08.8.82-3-.2-.31a7.93 7.93 0 0 1-1.21-4.27c0-4.4 3.61-7.98 8.06-7.98 4.44 0 8.05 3.58 8.05 7.98 0 4.4-3.61 7.98-8.06 7.98Zm4.69-5.94c-.26-.13-1.53-.76-1.77-.85-.24-.09-.42-.13-.6.13s-.69.85-.85 1.02-.31.19-.57.06a6.54 6.54 0 0 1-1.92-1.18 7.15 7.15 0 0 1-1.33-1.65c-.14-.25-.01-.38.11-.51.12-.12.25-.31.38-.46.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.6-1.44-.83-1.97-.22-.53-.45-.46-.6-.47h-.51c-.17 0-.45.06-.69.32s-.91.89-.91 2.17c0 1.28.93 2.52 1.06 2.69.13.17 1.83 2.83 4.44 3.97.62.27 1.1.43 1.48.55.62.2 1.18.17 1.62.1.5-.07 1.53-.62 1.75-1.23.22-.61.22-1.13.16-1.23-.06-.1-.24-.16-.5-.29Z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+        
+                    <!-- Phone -->
+                    <a class="btn secondary call" href="tel:+97450606655" title="Call me">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M6.62 10.79a15.093 15.093 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57.1.33.03.68-.24 1.02l-2.21 2.2Z" />
+                        </svg>
+                        Call
+                    </a>
                 </div>
             </div>
         </section>
+        </main>
+<!-- ===== SOCIAL & PLATFORMS ===== -->
+<section id="socials">
+    <div class="social-card">
+        <h3>Connect with me</h3>
+        <p>Follow my work, explore my code, or connect professionally on these platforms:</p>
 
-        <section id="achievements" class="fade-in-section">
-            <div class="container">
-                <h2>Achievements</h2>
-                <ul>
-                    <li> Earned Certificate in Web & Computer Programming from BYU-Idaho.</li>
-                    <li> Recognized for exceptional academic performance in BYU Pathway Connect.</li>
-                    <li> Successfully implemented cost-saving inventory measures, reducing waste by 20%.</li>
-                    <li> Developed an efficient document tracking system, reducing errors by 25%.</li>
-                    <li> Processed high volumes of data entry with an accuracy rate exceeding 99%.</li>
-                </ul>
-            </div>
-        </section>
+        <div class="social-links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ethemdeli/" target="_blank" rel="noopener" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.941v5.665H9.351V9h3.414v1.561h.049c.477-.9 1.637-1.85 3.37-1.85 3.6 0 4.265 2.371 4.265 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM6.91 20.452H3.76V9h3.15v11.452ZM22.225 0H1.771C.792 0 0 .77 0 1.723v20.555C0 23.23.792 24 1.771 24h20.451C23.2 24 24 23.23 24 22.278V1.723C24 .77 23.2 0 22.222 0Z" />
+                </svg>
+            </a>
 
-        <section id="contact" class="fade-in-section">
-            <div class="container">
-                <h2>Contact</h2>
-                <div class="contact-buttons">
-                    <a href="mailto:deliethem95@gmail.com" class="btn btn-email" title="Send Email">📧 Email</a>
-                    <a href="https://github.com/Ethem-Deli" target="_blank" class="btn btn-github"
-                        title="Visit GitHub">🐙
-                        GitHub</a>
-                    <a href="https://www.linkedin.com/in/ethem-deli/" target="_blank" class="btn btn-linkedin"
-                        title="Visit LinkedIn">🔗 LinkedIn</a>
-                    <a href="tel:+97450606655" class="btn btn-phone" title="Call Phone">📞 Call</a>
-                </div>
+            <!-- GitHub -->
+            <a href="https://github.com/ethemdeli" target="_blank" rel="noopener" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 .297a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.18c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 0 0-1.33-1.75c-1.09-.74.08-.73.08-.73a2.53 2.53 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.6c-2.67-.31-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.17s1-.32 3.3 1.23a11.32 11.32 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.17 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.8 5.61-5.47 5.92a2.88 2.88 0 0 1 .82 2.24v3.33c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                </svg>
+            </a>
 
-                <p><strong>Nationality:</strong>
-                    <img src="https://flagcdn.com/w40/tr.png" alt="Turkish Flag"
-                        style="height: 2em; vertical-align: middle; margin-right: 0.3em;" />
-                    Turkish
-                </p>
-                <p><strong>Languages:</strong> Turkish, Arabic, English</p>
-            </div>
-        </section>
-    </main>
+            <!-- Behance -->
+            <a href="https://www.behance.net/ethemdeli" target="_blank" rel="noopener" title="Behance">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M18.5 6.5H14v1h4.5v-1zM7.67 11.5H9c.87 0 1.57-.7 1.57-1.57S9.87 8.36 9 8.36H7.67V11.5ZM14 12.83c0-.73.25-1.47.73-2.06.5-.6 1.21-.94 2.07-.94 1.75 0 2.72 1.32 2.72 3.34h-4.4c.05.8.7 1.42 1.5 1.42.67 0 1.13-.32 1.3-.82h1.5c-.23 1.33-1.32 2.24-2.8 2.24-1.66 0-2.62-1.18-2.62-3.18ZM6 6H10.13c1.66 0 2.75.84 2.75 2.2 0 .84-.4 1.47-1.1 1.8.93.3 1.5 1.05 1.5 2.06 0 1.56-1.14 2.47-3.05 2.47H6V6Zm8 6h2.82c0-.73-.55-1.3-1.34-1.3-.77 0-1.38.57-1.48 1.3Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
 
-    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+        <footer class="footer">
+            <p>© <span id="year"></span> Ethem Deli Built with care.</p>
+            <p>All Rights Reserved.</p>
+        </footer>
+    </div>
 
-    <footer class="footer">
-        <p>&copy; <span id="year"></span> Ethem Deli. All Rights Reserved.</p>
-    </footer>
-
-    <script src="./scripts/scripts.js" defer></script>
+    <script src="/scripts/scripts.js"></script>
 </body>
 
 </html>

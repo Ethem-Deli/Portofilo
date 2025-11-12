@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>إيتم ديلي — السيرة الذاتية</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .hero-left,
+        .about-text,
+        .about-skills,
+        .contact-card {
+            text-align: right;
+        }
+
+        .avatar img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+        }
+
+        .call:hover {
+            background: #dc2626 !important;
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- ===== HEADER ===== -->
+        <header>
+            <div class="logo">ملف إيتم ديلي</div>
+
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="/index.html">الرئيسية</a></li>
+
+                    <li class="dropdown">
+                        <button class="dropbtn" id="cvDropdownBtn">السيرة الذاتية</button>
+                        <div class="dropdown-content" id="cvDropdown">
+                            <a href="/pages/resume-en.html">الإنجليزية</a>
+                            <a href="/pages/resume-tr.html">التركية</a>
+                            <a href="/pages/resume-ar.html">العربية</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <button class="dropbtn" id="projDropdownBtn">المشاريع</button>
+                        <div class="dropdown-content" id="projDropdown">
+                            <a href="projects.html">كل المشاريع</a>
+                            <a href="school-projects.html">مشاريع دراسية</a>
+                        </div>
+                    </li>
+
+                    <li><a href="certificates.html">الشهادات</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main>
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-left">
+                    <h1>السيرة الذاتية</h1>
+                    <p>ملخص عن الخبرة، المهارات، والتعليم.</p>
+
+                    <div class="cta-row">
+                        <a class="btn" href="/assets/pdfs/Ethem_Deli_Resume_AR.pdf" download>تحميل PDF</a>
+                        <a class="btn secondary" href="/index.html">العودة للرئيسية</a>
+                    </div>
+                </div>
+
+                <aside class="card-profile">
+                    <div class="avatar">
+                        <img src="/images/image.png" alt="Ethem Deli">
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">إيتم ديلي</div>
+                        <div class="profile-role">أخصائي بيانات وعمليات • مطوّر واجهات أمامية • قطر</div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- الملف الشخصي -->
+            <section style="margin-top:32px;">
+                <div class="about-text">
+                    <h3>نبذة عني</h3>
+                    <p>
+                        أخصائي إدارة بيانات وعمليات يتميز بالدقة والتنظيم، يمتلك أكثر من 11 عامًا من الخبرة في إدخال
+                        البيانات،
+                        التحكم في الوثائق، عمليات المخزون، وخدمة العملاء. متمكن من استخدام Microsoft Office Suite وSAP
+                        وEDMS
+                        وتقنيات الويب (HTML، CSS، JavaScript).
+                    </p>
+                    <p>
+                        ماهر في ضمان دقة البيانات، تبسيط سير العمل، وتعزيز الكفاءة التشغيلية. يتقن اللغات
+                        <strong>التركية، العربية، والإنجليزية</strong>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- الخبرة -->
+            <section style="margin-top:32px;">
+                <div class="about-text">
+                    <h3>الخبرة المهنية</h3>
+
+                    <div class="proj" style="margin-top:16px;">
+                        <h4>مراقب مخزون / مدير متجر</h4>
+                        <p><em>Khonaysser Power Factory – وكيل فولفو بنتا</em></p>
+                        <p><strong>يناير 2022 – مارس 2025</strong></p>
+                        <p>راقب مستويات المخزون، أنشأ أنظمة تحكم، أدار اللوجستيات، وتفاوض مع الموردين لتحقيق كفاءة
+                            وتوفير في التكاليف.</p>
+                    </div>
+
+                    <div class="proj" style="margin-top:16px;">
+                        <h4>مسؤول مشتريات / أمين مستودع</h4>
+                        <p><em>United Food Services</em></p>
+                        <p><strong>سبتمبر 2020 – ديسمبر 2021</strong></p>
+                        <p>تولى مهام الشراء، الالتزام، تسجيل الفواتير، تنسيق الفريق، وضمان جودة المنتجات وسلامتها.</p>
+                    </div>
+
+                    <div class="proj" style="margin-top:16px;">
+                        <h4>موظف أول – مراقب مستندات / مدخل بيانات</h4>
+                        <p><em>Blue Chip Trading Co.</em></p>
+                        <p><strong>سبتمبر 2016 – أغسطس 2020</strong></p>
+                        <p>أدار أنظمة التوثيق، تحقق من البيانات، أنشأ نسخًا احتياطية، وأعد تقارير دقيقة.</p>
+                    </div>
+
+                    <div class="proj" style="margin-top:16px;">
+                        <h4>مدخل بيانات</h4>
+                        <p><em>RUMCO (التجارة والمقاولات)</em></p>
+                        <p><strong>يوليو 2013 – يوليو 2016</strong></p>
+                        <p>تعامل مع إدخال كميات كبيرة من البيانات، تحقق من الدقة، وأدار النسخ الاحتياطية مع الحفاظ على
+                            أمن البيانات.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- التعليم -->
+            <section style="margin-top:32px;">
+                <div class="about-text">
+                    <h3>التعليم</h3>
+                    <ul style="margin-top:8px; color:var(--muted);">
+                        <li>بكالوريوس في برمجة الويب والحاسوب (قيد الدراسة) – BYU-Idaho Online</li>
+                        <li>شهادة في برمجة الويب والحاسوب – BYU-Idaho</li>
+                        <li>شهادة في التكنولوجيا التطبيقية – BYU Pathway Connect</li>
+                        <li>شهادات في ضبط الوثائق وMS Office – Filipino Institute</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- المهارات -->
+            <section style="margin-top:32px;">
+                <div class="about-skills">
+                    <h3>المهارات</h3>
+                    <div class="skills" style="flex-wrap:wrap; flex-direction:row;">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SAP</span>
+                        <span class="tag">EDMS</span>
+                        <span class="tag">MS Office</span>
+                        <span class="tag">إدارة الوثائق</span>
+                        <span class="tag">التحكم في المخزون</span>
+                        <span class="tag">إدخال البيانات</span>
+                        <span class="tag">خدمة العملاء</span>
+                        <span class="tag">حل المشكلات التقنية</span>
+                        <span class="tag">متعدد اللغات (TR / AR / EN)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- الإنجازات -->
+            <section style="margin-top:32px;">
+                <div class="about-text">
+                    <h3>الإنجازات</h3>
+                    <ul style="margin-top:8px; color:var(--muted);">
+                        <li>حصل على شهادة في برمجة الويب والحاسوب من BYU-Idaho.</li>
+                        <li>تم تكريمه للأداء الأكاديمي المتميز في BYU Pathway Connect.</li>
+                        <li>نفّذ إجراءات خفض النفايات بنسبة 20٪، مما وفر في التكاليف.</li>
+                        <li>طور نظام تتبع مستندات قلل الأخطاء بنسبة 25٪.</li>
+                        <li>حقق دقة إدخال بيانات تتجاوز 99٪.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- التواصل -->
+            <section style="margin-top:32px;">
+                <div class="contact-card">
+                    <div>
+                        <h3>اتصل بي</h3>
+                        <p>للتعاون أو الاستفسار، لا تتردد في التواصل. أستجيب عادة خلال 24 ساعة.</p>
+                        <p><strong>الجنسية:</strong> <img src="https://flagcdn.com/w40/tr.png" alt="علم تركيا"
+                                style="height:1.2em;vertical-align:middle;margin:0 0.3em;"> تركي</p>
+                        <p><strong>اللغات:</strong> التركية، العربية، الإنجليزية</p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a class="btn" href="mailto:deliethem95@gmail.com" title="إرسال بريد إلكتروني">📧 بريد</a>
+                        <a class="btn secondary" href="https://github.com/Ethem-Deli" target="_blank" rel="noopener"
+                            title="ملف GitHub">🐙 GitHub</a>
+                        <a class="btn secondary" href="https://www.linkedin.com/in/ethem-deli/" target="_blank"
+                            rel="noopener" title="ملف LinkedIn">🔗 LinkedIn</a>
+                        <a class="btn secondary call" href="tel:+97450606655" title="اتصال هاتفي">📞 اتصال</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© <span id="year"></span> إيتم ديلي — جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+
+    <script src="/scripts/scripts.js"></script>
+</body>
+
+</html>

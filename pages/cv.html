@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Ethem Deli</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">My Portfolio</div>
+        
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+            <nav id="nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+        
+                    <li class="dropdown">
+                        <button class="dropbtn" id="cvDropdownBtn">CV</button>
+                        <div class="dropdown-content" id="cvDropdown">
+                            <a href="/pages/resume-en.html">Resume English</a>
+                            <a href="/pages/resume-tr.html">Resume Turkish</a>
+                            <a href="/pages/resume-ar.html">Resume Arabic</a>
+                        </div>
+                    </li>
+        
+                    <li class="dropdown">
+                        <button class="dropbtn" id="projDropdownBtn">Projects</button>
+                        <div class="dropdown-content" id="projDropdown">
+                            <a href="projects.html">All Projects</a>
+                            <a href="school-projects.html">School Projects</a>
+                        </div>
+                    </li>
+        
+                    <li><a href="certificates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="career-docs">
+                <div class="section-title">
+                    <h2>Career documents</h2>
+                    <p>Quick access to resumes</p>
+                </div>
+            
+                <div class="grid-projects">
+                    <article class="proj">
+                        <h3>Resume English</h3>
+                        <p>Official resume summary of experience and skills in English</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="/pages/resume-en.html">View</a>
+                        </div>
+                    </article>
+            
+                    <article class="proj">
+                        <h3>Resume Turkish</h3>
+                        <p>Official resume summary of experience and skills in Turkish</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="/pages/resume-tr.html">View</a>
+                        </div>
+                    </article>
+            
+                    <article class="proj">
+                        <h3>Resume Arabic</h3>
+                        <p>Official resume summary of experience and skills in Arabic</p>
+                        <div class="proj-links">
+                            <a class="btn secondary" href="/pages/resume-ar.html">View</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <p> &copy; <span id="year"></span> Ethem Deli Built with care.</p>
+            <p>All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="/scripts/scripts.js"></script>
+</body>
+
+</html>
